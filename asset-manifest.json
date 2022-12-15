@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bmverse/static/css/main.f9dcf7bc.css",
-    "main.js": "/bmverse/static/js/main.58c4770e.js",
+    "main.css": "/bmverse/static/css/main.816a78b0.css",
+    "main.js": "/bmverse/static/js/main.729e6bef.js",
     "static/js/787.c1589120.chunk.js": "/bmverse/static/js/787.c1589120.chunk.js",
     "static/media/video2.mp4": "/bmverse/static/media/video2.a9b92c9afbe0143196bd.mp4",
     "static/media/video1.mp4": "/bmverse/static/media/video1.9c1152adf7a673e69746.mp4",
@@ -14,7 +14,7 @@
     "static/media/girl1.mp4": "/bmverse/static/media/girl1.0dbf142e492f2a3f126e.mp4",
     "static/media/Sidity.png": "/bmverse/static/media/Sidity.3aafcf2f5c474903e8fb.png",
     "static/media/sunVideo.mp4": "/bmverse/static/media/sunVideo.b2f26972e6db03312bba.mp4",
-    "static/media/bg.png": "/bmverse/static/media/bg.73aee3b3161ae23bad0f.png",
+    "static/media/bg.png": "/bmverse/static/media/bg.5e0ae16d296940873f0e.png",
     "static/media/Dragon.png": "/bmverse/static/media/Dragon.786f37d045a5304521d9.png",
     "static/media/Blome.png": "/bmverse/static/media/Blome.72a3c97d00483685a7a9.png",
     "static/media/bmmusic-header.png": "/bmverse/static/media/bmmusic-header.d10b6078ac70b95d249b.png",
@@ -44,6 +44,7 @@
     "static/media/galary1.png": "/bmverse/static/media/galary1.f78c15e9d8d251e46362.png",
     "static/media/galary3.png": "/bmverse/static/media/galary3.2163b9f94a13771f6137.png",
     "static/media/galary2.png": "/bmverse/static/media/galary2.641b7707d1026aa341e7.png",
+    "static/media/video.mp4": "/bmverse/static/media/video.228ad6e24621401fdbe4.mp4",
     "static/media/video11.mp4": "/bmverse/static/media/video11.228ad6e24621401fdbe4.mp4",
     "static/media/space.png": "/bmverse/static/media/space.d2999b87b090fb65364c.png",
     "static/media/render.png": "/bmverse/static/media/render.be9d4fb84245a8b91f99.png",
@@ -86,12 +87,12 @@
     "static/media/lineImg2.png": "/bmverse/static/media/lineImg2.3a8c8e35562eb62b5092.png",
     "static/media/logo.png": "/bmverse/static/media/logo.1c3367d8f073c26fd6a1.png",
     "index.html": "/bmverse/index.html",
-    "main.f9dcf7bc.css.map": "/bmverse/static/css/main.f9dcf7bc.css.map",
-    "main.58c4770e.js.map": "/bmverse/static/js/main.58c4770e.js.map",
+    "main.816a78b0.css.map": "/bmverse/static/css/main.816a78b0.css.map",
+    "main.729e6bef.js.map": "/bmverse/static/js/main.729e6bef.js.map",
     "787.c1589120.chunk.js.map": "/bmverse/static/js/787.c1589120.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9dcf7bc.css",
-    "static/js/main.58c4770e.js"
+    "static/css/main.816a78b0.css",
+    "static/js/main.729e6bef.js"
   ]
 }
