@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import configs from 'configs';
 
 import "./App.scss";
 import BMlanding from "pages/BMblocks/BMlanding";
@@ -15,15 +14,15 @@ import AntverseMint from "pages/BMmints/AntverseMint";
 function App() {
   return (
     <Routes>
-      <Route path=`/${configs.BASE_URL}/` element={<BMlanding />} />
-      <Route path=`/${configs.BASE_URL}/bmgame` element={<BMgame />} />
-      <Route path=`/${configs.BASE_URL}/bmgalaxy` element={<BMgalaxy />} />
-      <Route path=`/${configs.BASE_URL}/bmmusic` element={<BMmusic />} />
-      <Route path=`/${configs.BASE_URL}/bmcard` element={<BMcard />} />
-      <Route path=`/${configs.BASE_URL}/bmmega` element={<BMmega />} />
-      <Route path=`/${configs.BASE_URL}/bmjewel` element={<BMjewel />} />
-      <Route path=`/${configs.BASE_URL}/bmlearn` element={<BMlearn />} />
-      <Route path=`/${configs.BASE_URL}/antversemint` element={<AntverseMint />} />
+      <Route path="/" element={<BMlanding />} />
+      <Route path="/bmgame" element={<BMgame />} />
+      <Route path="/bmgalaxy" element={<BMgalaxy />} />
+      <Route path="/bmmusic" element={<BMmusic />} />
+      <Route path="/bmcard" element={<BMcard />} />
+      <Route path="/bmmega" element={<BMmega />} />
+      <Route path="/bmjewel" element={<BMjewel />} />
+      <Route path="/bmlearn" element={<BMlearn />} />
+      <Route path="/antversemint" element={<AntverseMint />} />
     </Routes>
   );
 }

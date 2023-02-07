@@ -73,10 +73,10 @@ const Footer: React.FC<FooterProps> = () => {
         </div>
         <div className="footer_div_2">
           <a href="https://github.com/beautifullminds">Github</a>
-          <a href="/">Discord Commuinity </a>
-          <a href="/">Site map</a>
-          <a href="/">Collab</a>
-          <a href="/">Privacy Policy</a>
+          <a href={`/${configs.BASE_URL}`}>Discord Commuinity </a>
+          <a href={`/${configs.BASE_URL}`}>Site map</a>
+          <a href={`/${configs.BASE_URL}`}>Collab</a>
+          <a href={`/${configs.BASE_URL}`}>Privacy Policy</a>
         </div>
       </div>
     </section>
