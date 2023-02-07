@@ -1,4 +1,5 @@
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import configs from "configs";
 import line from "assets/imgs/galaxy/Line.png";
 
 interface FooterProps {}
