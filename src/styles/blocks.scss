@@ -15,7 +15,7 @@ body {
     #2b022e 140vw,
     #0b305a 100%
   );
-  padding-bottom: 150px;
+  padding-top: 62px;
 }
 .bm-content {
   padding: 0 200px;
@@ -81,6 +81,14 @@ body {
   top: 425px;
 }
 
+.limited-text {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
 @media (min-width: 1024px) {
   .transition-origin {
     left: 0px;
@@ -99,6 +107,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .landing-container {
+    padding-top: 93px;
+  }
   .content {
     padding: 15px;
   }

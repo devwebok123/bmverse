@@ -1,16 +1,13 @@
-import React, { useRef, useEffect, useState } from "react";
-import configs from "configs";
+import React, { useRef } from "react";
 import Layout from "components/Layout";
 
 import LinkedinIcon from "assets/imgs/landing/linkedin.png";
 import TwitterIcon from "assets/imgs/landing/twitter.png";
 import YoutubeIcon from "assets/imgs/landing/youtube.png";
 import MediumIcon from "assets/imgs/landing/medium.png";
-import BtnImg from "assets/imgs/landing/start.png";
 
 const contentStyle = {
   maxWidth: "1360px",
-  minHeight: "700px",
   backgroundImage: `url(${require("assets/imgs/landing/bg.png")}`,
   margin: "auto"
 };
@@ -19,33 +16,24 @@ interface BMlandingProps {}
 
 const BMlanding: React.FC<BMlandingProps> = () => {
   const layoutView = useRef(null);
-  const [scrollH, setScrollH] = useState(-1);
-
-  useEffect(() => {
-    setScrollH(0);
-    const onScroll = () => setScrollH(window.pageYOffset);
-    window.removeEventListener("scroll", onScroll);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   return (
-    <Layout ref={layoutView} scroll={scrollH}>
-      <div className="px-5 bg-dark min-h-[100vh] py-[50px]">
+    <Layout ref={layoutView}>
+      <div className="px-5 bg-dark min-h-[100vh] pb-[20px] pt-[100px]">
         <div
           style={contentStyle}
           className="
             text-center 
             rounded-[50px] 
             bg-100 
-            w-full 
+            w-3/4 
             shadow-[0px_0px_30px_rgba(255,255,255,0.2)] 
             relative 
             p-[30px_10px_150px] 
-            md:p-[30px_60px_140px]"
+            md:p-[30px_60px_140px] xl:h-[620px]"
         >
-          <div className="md:flex">
-            <div className="md:w-1/3 flex">
+          <div className="lg:flex">
+            <div className="lg:w-[1000px] flex">
               <video
                 className="m-auto rounded-[20px] content-justify"
                 loop
@@ -54,25 +42,27 @@ const BMlanding: React.FC<BMlandingProps> = () => {
                 style={{ mixBlendMode: "screen" }}
               >
                 <source
-                  src={require("assets/imgs/landing/video.mp4")}
-                  type="video/mp4"
+                  src={require("assets/imgs/landing/video.webm")}
+                  type="video/webm"
                 />
               </video>
             </div>
-            <div className="md:w-2/3 text-left">
-              <div className="text-52 font-bold tracking-wide mt-[30px]">
-                BMverse™
+            <div className="text-left">
+              <div className="text-20 md:text-28 font-bold tracking-wide mt-[30px] mb-3">
+                BMverse "Beautifull Minds Foundation"
               </div>
-              <div className="text-26 md:text-39 font-bold tracking-standard break-all">
-                The Decentralized Platforms Provider
+              <div className="text-16 md:text-22 font-bold tracking-standard break-all">
+                The decentralized platforms provider
               </div>
-              <div className="text-26 md:text-39 font-bold tracking-standard break-all">
-                Generation ALPHA Prerequisites in Web3
+              <div className="text-16 md:text-22 font-bold tracking-standard break-all">
+                Generation ALPHA Prerequisites in #WEB3
               </div>
-              <div className="md:grid grid-cols-3 gap-[50px] mt-[60px]">
-                <div className="rounded-[20px] border-2 border-white p-3 mb-5">
-                  <div className="text-36 font-bold">Community</div>
-                  <p className="text-18 font-bold">Development Capability</p>
+              <div className="md:grid grid-cols-3 gap-[50px] mt-[30px]">
+                <div className="rounded-[20px] border-2 border-white p-3 mb-3">
+                  <div className="text-16 md:text-23 font-bold">Community</div>
+                  <p className="text-14 md:text-16 font-bold">
+                    Development Capability
+                  </p>
                   <div className="text-12 font-bold mt-3">
                     The First Global Web3 Community For Designer Professionals.
                     Holders gain access to a global community consisting of the
@@ -80,9 +70,9 @@ const BMlanding: React.FC<BMlandingProps> = () => {
                     industry.
                   </div>
                 </div>
-                <div className="rounded-[20px] border-2 border-white p-3 mb-5">
-                  <div className="text-36 font-bold">Discover</div>
-                  <p className="text-18 font-bold">unique Senses</p>
+                <div className="rounded-[20px] border-2 border-white p-3 mb-3">
+                  <div className="text-16 md:text-23 font-bold">Discover</div>
+                  <p className="text-14 md:text-16 font-bold">unique Senses</p>
                   <div className="text-12 font-bold mt-3">
                     Relying on the data obtained from the analysis of the
                     frequencies produced and received by the brain, we realized
@@ -90,9 +80,11 @@ const BMlanding: React.FC<BMlandingProps> = () => {
                     realistic sense of a virtual world . . .
                   </div>
                 </div>
-                <div className="rounded-[20px] border-2 border-white p-3 mb-5">
-                  <div className="text-36 font-bold">Next-Gen of</div>
-                  <p className="text-18 font-bold">
+                <div className="rounded-[20px] border-2 border-white p-3 mb-3">
+                  <div className="text-16 md:text-23 font-bold">
+                    Next-Gen of
+                  </div>
+                  <p className="text-14 md:text-16 font-bold">
                     Interactive metaverse games
                   </p>
                   <div className="text-12 font-bold mt-3">
@@ -103,39 +95,57 @@ const BMlanding: React.FC<BMlandingProps> = () => {
                 </div>
               </div>
               <div className="mt-5">
-                <a href={`/${configs.BASE_URL}/#/bmgame`}>
-                  <img
-                    src={BtnImg}
-                    className="float-right mr-[30px]"
-                    alt="startbtn"
-                  />
+                <a
+                  href={`/#/bmgame`}
+                  className="px-4 pt-1 pb-4 float-right mr-[30px] bg-100 text-20 font-semibold"
+                  style={{
+                    backgroundImage: `url(${require("assets/imgs/landing/start.png")}`
+                  }}
+                >
+                  Start of The Journey
                 </a>
               </div>
             </div>
           </div>
           <div className="absolute bottom-[20px]">
-            <a href={`/${configs.BASE_URL}/#/`}>
+            <a
+              href="https://www.linkedin.com/company/bmverse"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 src={LinkedinIcon}
                 alt="linkedinicon"
                 className="inline mx-2 w-[45px]"
               />
             </a>
-            <a href={`/${configs.BASE_URL}/#/`}>
+            <a
+              href="https://twitter.com/bmverseio"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 src={TwitterIcon}
                 alt="twittericon"
                 className="inline mx-2 w-[45px]"
               />
             </a>
-            <a href={`/${configs.BASE_URL}/#/`}>
+            <a
+              href="https://www.youtube.com/@Quantelium"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 src={YoutubeIcon}
                 alt="youtubeicon"
                 className="inline mx-2 w-[45px]"
               />
             </a>
-            <a href={`/${configs.BASE_URL}/#/`}>
+            <a
+              href="https://bmverse.medium.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 src={MediumIcon}
                 alt="mediumicon"
