@@ -7,6 +7,7 @@ import {
 import { useAppDispatch, useAppSelector } from "store/hooks";
 import { onboard } from "ethereum/OnBoard";
 import Storage from "store/storage";
+import configs from 'configs';
 
 import Logo from "assets/imgs/logo.png";
 import LogoGod from "assets/imgs/logo-god.png";
@@ -56,7 +57,7 @@ const Header: React.FC<HeaderProps> = () => {
           <img src={Logo} alt="logo" width={54} />
         </div>
         <div className="text-center md:w-1/3">
-          <a href="/">
+          <a href=`/${configs.BASE_URL}/`>
             <img className="inline" src={LogoGod} width={62} alt="logo-god" />
             <span className="text-white text-22 lg:text-28 tracking-wide">
               BMVerse.io
