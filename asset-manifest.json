@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bmverse/static/css/main.a4beb92f.css",
-    "main.js": "/bmverse/static/js/main.51afb406.js",
+    "main.js": "/bmverse/static/js/main.6e2f8b2a.js",
     "static/js/1524.cd9571ca.chunk.js": "/bmverse/static/js/1524.cd9571ca.chunk.js",
     "static/js/3685.6ede3a8c.chunk.js": "/bmverse/static/js/3685.6ede3a8c.chunk.js",
     "static/js/6608.da8a61f2.chunk.js": "/bmverse/static/js/6608.da8a61f2.chunk.js",
@@ -203,7 +203,7 @@
     "static/media/logo.png": "/bmverse/static/media/logo.1c3367d8f073c26fd6a1.png",
     "index.html": "/bmverse/index.html",
     "main.a4beb92f.css.map": "/bmverse/static/css/main.a4beb92f.css.map",
-    "main.51afb406.js.map": "/bmverse/static/js/main.51afb406.js.map",
+    "main.6e2f8b2a.js.map": "/bmverse/static/js/main.6e2f8b2a.js.map",
     "3685.6ede3a8c.chunk.js.map": "/bmverse/static/js/3685.6ede3a8c.chunk.js.map",
     "6608.da8a61f2.chunk.js.map": "/bmverse/static/js/6608.da8a61f2.chunk.js.map",
     "5111.cbc4e3ea.chunk.js.map": "/bmverse/static/js/5111.cbc4e3ea.chunk.js.map",
@@ -305,6 +305,6 @@
   },
   "entrypoints": [
     "static/css/main.a4beb92f.css",
-    "static/js/main.51afb406.js"
+    "static/js/main.6e2f8b2a.js"
   ]
 }
