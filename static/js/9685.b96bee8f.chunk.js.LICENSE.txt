@@ -1,0 +1,3 @@
+/*! MIT License. Copyright 2015-2018 Richard Moore <me@ricmoo.com>. See LICENSE.txt. */
+
+/*! crc32.js (C) 2014-present SheetJS -- http://sheetjs.com */
