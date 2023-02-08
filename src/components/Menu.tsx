@@ -32,7 +32,7 @@ const Menu: React.FC<MenuProps> = () => {
           <div className="text-center py-1" key={index} style={menuItemStyle}>
             <Link
               className="font-semibold text-14 md:text-22 text-white"
-              href={`/${item.url}`}
+              to={`/${item.url}`}
             >
               {item.label}
             </Link>
