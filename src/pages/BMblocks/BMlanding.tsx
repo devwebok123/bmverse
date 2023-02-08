@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Layout from "components/Layout";
 import configs from "configs";
+import { Link } from "react-router-dom";
 
 import LinkedinIcon from "assets/imgs/landing/linkedin.png";
 import TwitterIcon from "assets/imgs/landing/twitter.png";
@@ -96,15 +97,15 @@ const BMlanding: React.FC<BMlandingProps> = () => {
                 </div>
               </div>
               <div className="mt-5">
-                <a
-                  href={`/${configs.BASE_URL}/#/bmgame`}
+                <Link
+                  href={`/bmgame`}
                   className="px-4 pt-1 pb-4 float-right mr-[30px] bg-100 text-20 font-semibold"
                   style={{
                     backgroundImage: `url(${require("assets/imgs/landing/start.png")}`
                   }}
                 >
                   Start of The Journey
-                </a>
+                </Link>
               </div>
             </div>
           </div>
