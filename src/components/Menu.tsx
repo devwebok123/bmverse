@@ -1,5 +1,4 @@
 import React from "react";
-import configs from "configs";
 import { Link } from "react-router-dom";
 
 interface MenuProps {}

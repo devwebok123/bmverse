@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import Layout from "components/Layout";
-import configs from "configs";
 import { Link } from "react-router-dom";
 
 import LinkedinIcon from "assets/imgs/landing/linkedin.png";
